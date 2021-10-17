@@ -14,7 +14,7 @@ const routes = [
 
 const router = createRouter({
     routes,
-    history: createWebHistory('/golink/'),
+    history: createWebHistory(),
 })
 
 router.beforeEach((to, from, next) => {
