@@ -9,9 +9,11 @@ getId();
 // 获取短链id
 function getId () {  
   let sid = route.params.sid;
-  let url = `${host}${sid}`;
+  let url = '';
   if (sid == 'index') {
     url = tool;
+  } else {
+    url = `${host}${sid}`;
   }
   location.href = url;
 }

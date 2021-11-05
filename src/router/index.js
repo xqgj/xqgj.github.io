@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 import index from '../components/index.vue'
 
 const routes = [
@@ -14,7 +14,7 @@ const routes = [
 
 const router = createRouter({
     routes,
-    history: createWebHistory(),
+    history: createWebHashHistory(),
 })
 
 router.beforeEach((to, from, next) => {
