@@ -1,10 +1,10 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router'
 import index from '../components/index.vue'
 
 const routes = [
     {
         path: '/',
-        redirect: '/index',
+        redirect: "/index",
     },
     {
         path: '/:sid',
@@ -14,7 +14,7 @@ const routes = [
 
 const router = createRouter({
     routes,
-    history: createWebHashHistory(),
+    history: createWebHistory(),
 })
 
 router.beforeEach((to, from, next) => {
