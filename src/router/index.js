@@ -4,10 +4,7 @@ import index from '../components/index.vue'
 const routes = [
     {
         path: '/',
-        redirect: "/index",
-    },
-    {
-        path: '/:sid',
+        name: 'home',
         component: index,
     },
 ]
